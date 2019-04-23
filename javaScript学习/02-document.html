@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内置对象-document</title>
+    <script>
+        /*内置对象 document
+         */
+        document.write('Hello World')
+
+        document.write('<button>我是按钮</button>')
+        function see() {
+            alert(0);
+            var img = document.getElementById('icon');
+            img.src = 'image/新消息@2x.png';
+        }
+    </script>
+</head>
+<body>
+    <img id="icon" src="image/我的bg@2x.png" alt="测试">
+    <p></p>
+     <button onclick="see();">function</button>
+</body>
+</html>

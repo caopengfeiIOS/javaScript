@@ -1,0 +1,78 @@
+*{
+    padding:0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+  list-style: none;
+}
+
+body{
+    margin: 60px;
+
+}
+#tab{
+    width: 498px;
+    height: 130px;
+    /*边框*/
+    border: 1px solid #9d9d9d;
+    overflow: hidden;
+}
+#tab-Header{
+    height: 33px;
+    background: #e8e8e8;
+    position: relative;
+
+}
+
+#tab-Header ul{
+      width: 501px;
+    position: relative;
+    left: -1px;
+}
+#tab-Header ul li{
+    float: left;
+    width: 98px;
+    height: 33px;
+    /*文字水平和垂直剧中*/
+    text-align: center;
+    line-height:33px;
+    /*设置内边距，先占满控件*/
+    padding: 0 1px;
+
+    border-bottom: 1px solid #9d9d9d;
+
+
+}
+/*伪类*/
+#tab-Header ul li:hover{
+    color: orange;
+    font-weight: bolder;
+}
+/*拿到头部选中的li标签*/
+#tab-Header ul li.selected{
+   background: white;
+    border-bottom: 0px solid #9d9d9d;
+    border-left: 1px solid #9d9d9d;
+    border-right: 1px solid #9d9d9d;
+    padding: 0 0px;
+}
+
+#tab-content{
+
+}
+#tab-content .dom{
+    display: none;
+}
+#tab-content .dom ul li{
+    float: left;
+    width: 230px;
+    text-align: center;
+    margin: 5px 0px;
+}
+#tab-content .dom ul li a:hover{
+    color: orange;
+}
